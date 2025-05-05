@@ -13,7 +13,7 @@ const Navbar = () => {
     userSignOut()
       .then(() => {
         alert("successfully signOut");
-        navigate('/login')
+        navigate('/auth/login')
       })
       .catch(error => alert(error.code, error.message))
   }
@@ -36,7 +36,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-2xl font-extrabold ">The EPL Hub</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -45,13 +45,15 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         {user ?
-          <>
-            <p className='bg-green-100 p-2 mx-2 rounded-lg text-amber-700'>{user.email}</p>
+          <><div className='flex bg-gray-200  rounded-lg mx-2' >
+             <img className='w-12 h-9 my-auto mx-1 rounded-md ' src={user.photoURL} alt="" />
+             <p className=' p-2'>{user.email}</p>
+          </div>
             <Link onClick={handleLogout} className='btn btn-error'> Logout</Link>
           </>
-          : <Link className='btn btn-primary' to='/login'>Login</Link>}
+          : <><Link className='btn btn-primary' to='/auth/login'>Login</Link>  <a className="btn" href='/auth/register'>Register</a></>}
 
-        <a className="btn" href='/register'>Register</a>
+       
       </div>
     </div>
   );

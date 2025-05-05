@@ -5,6 +5,9 @@ import Home from "../components/Home";
 import Profile from "../components/Profile";
 import Login from "../auth/Login";
 import Register from "../auth/Register";
+import Error from "../components/Error/Error";
+
+import Auth from "../auth/Auth";
 
 const router= createBrowserRouter([
     {
@@ -19,16 +22,29 @@ const router= createBrowserRouter([
                 path:'/profile',
                 Component: Profile
             },
+            
+        ],
+
+    },
+    {
+        path:'auth',
+        Component: Auth,
+        children: [
             {
-                path:'/login',
+                path:'/auth/login',
                 Component: Login
             },
             {
-                path: '/register',
+                path: '/auth/register',
                 Component : Register
             }
         ]
+    },
+    {
+        path:'*',
+        Component:Error
     }
+
 ])
 
 export default router;
