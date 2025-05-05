@@ -7,8 +7,9 @@ import Login from "../auth/Login";
 import Register from "../auth/Register";
 import Error from "../components/Error/Error";
 
-import Auth from "../auth/Auth";
+import Auth from "../layouts/Auth";
 import MatchDetails from "../components/MatchesData/MatchDetails";
+import Privateroute from "../PrivateRoute/Privateroute";
 
 const router= createBrowserRouter([
     {
@@ -25,7 +26,7 @@ const router= createBrowserRouter([
             },
             {
                 path:'/matchDetails/:id',
-                Component: MatchDetails,
+                element: <Privateroute><MatchDetails></MatchDetails></Privateroute>,
                 loader: ()=> fetch('/data.json')
             }
             

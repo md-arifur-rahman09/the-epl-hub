@@ -55,11 +55,11 @@ const MatchDetails = () => {
       <div className='col-span-3 bg-gray-100 sticky h-fit top-2 '>
         <h3 className="text-3xl font-bold mb-3 py-5 text-center bg-gray-300">Booking Info</h3>
         {bookedTicket ? (
-          <p className="text-green-600 mx-5">
+          <p className="text-green-600 mx-5 mb-5">
             Ticket for <strong>{name}</strong> has been successfully booked.
           </p>
         ) : (
-          <p className="text-red-600"> No ticket has been booked yet.</p>
+          <p className="text-red-600 mx-5 mb-5"> No ticket has been booked yet.</p>
         )}
       </div>
     </div>
