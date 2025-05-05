@@ -2,6 +2,7 @@ import React, { use } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router';
 import './Navbar.css'
 import { AuthContext } from '../../context/AuthProvider';
+import { FaUser } from 'react-icons/fa';
 
 const Navbar = () => {
   const navigate=useNavigate();
@@ -51,7 +52,7 @@ const Navbar = () => {
           </div>
             <Link onClick={handleLogout} className='btn btn-error'> Logout</Link>
           </>
-          : <><Link className='btn btn-primary' to='/auth/login'>Login</Link>  <a className="btn" href='/auth/register'>Register</a></>}
+          : <><Link className='btn btn-primary' to='/auth/login'>Login</Link>  <Link className='rounded-xl  mx-5 btn' to='/auth/register'><FaUser size={30} color="gray" /></Link></>}
 
        
       </div>

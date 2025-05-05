@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "thumbnail": "https://example.com/images/epl1.jpg",
+      "thumbnail": "https://assets.goal.com/images/v3/blt50cefad6eb25dd18/Big_Match_Liverpool_vs_Man_United.jpg?auto=webp&format=pjpg&width=3840&quality=60",
       "name": "Manchester United vs Liverpool",
       "category": "Football Match",
       "date": "2025-08-12",
@@ -9,7 +9,7 @@
       "entry_fee": "£75",
       "team1": "Manchester United",
       "team2": "Liverpool",
-      "image": "https://images.pexels.com/photos/17598568/pexels-photo-17598568/free-photo-of-young-man-in-a-football-shirt-and-a-baseball-cap.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+     
       "stadium": "Old Trafford",
       "capacity": "74,310",
       "referee": "Michael Oliver",
@@ -25,7 +25,7 @@
     },
     {
       "id": 2,
-      "thumbnail": "https://example.com/images/epl2.jpg",
+      "thumbnail": "https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,g_faces,q_90/editorial/match-reports/2022-23/Arsenal%20pre-season/orlando_arsenal_havertz.jpg",
       "name": "Chelsea vs Arsenal",
       "category": "Football Match",
       "date": "2025-08-15",
@@ -33,7 +33,7 @@
       "entry_fee": "£70",
       "team1": "Chelsea",
       "team2": "Arsenal",
-      "image": "https://images.pexels.com/photos/17598568/pexels-photo-17598568/free-photo-of-young-man-in-a-football-shirt-and-a-baseball-cap.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      
       "stadium": "Stamford Bridge",
       "capacity": "40,343",
       "referee": "Anthony Taylor",
@@ -49,7 +49,7 @@
     },
     {
       "id": 3,
-      "thumbnail": "https://example.com/images/epl3.jpg",
+      "thumbnail": "https://cdn.vox-cdn.com/thumbor/GqvdEuiLzvrUWUn7GFmIzwNWZDU=/0x0:3513x2422/1200x800/filters:focal(1380x565:1942x1127)/cdn.vox-cdn.com/uploads/chorus_image/image/69179698/1302129111.0.jpg",
       "name": "Manchester City vs Tottenham",
       "category": "Football Match",
       "date": "2025-08-20",
@@ -73,7 +73,7 @@
     },
     {
       "id": 4,
-      "thumbnail": "https://example.com/images/epl4.jpg",
+      "thumbnail": "https://media.zenfs.com/en/evening_standard_239/a1fc56c467b670d0d60bd9ce5ad8b8b5",
       "name": "Leicester City vs West Ham",
       "category": "Football Match",
       "date": "2025-08-22",
@@ -97,7 +97,7 @@
     },
     {
       "id": 5,
-      "thumbnail": "https://example.com/images/epl5.jpg",
+      "thumbnail": "https://e0.365dm.com/21/05/2048x1152/skysports-aston-villa-everton_5377142.jpg?20210510174653",
       "name": "Everton vs Aston Villa",
       "category": "Football Match",
       "date": "2025-08-25",
@@ -105,7 +105,7 @@
       "entry_fee": "£65",
       "team1": "Everton",
       "team2": "Aston Villa",
-      "image": "https://images.pexels.com/photos/17598568/pexels-photo-17598568/free-photo-of-young-man-in-a-football-shirt-and-a-baseball-cap.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      
       "stadium": "Goodison Park",
       "capacity": "39,572",
       "referee": "Mike Dean",
@@ -121,7 +121,7 @@
     },
     {
       "id": 6,
-      "thumbnail": "https://example.com/images/epl6.jpg",
+      "thumbnail": "https://images2.minutemediacdn.com/image/upload/c_crop,w_1919,h_1079,x_0,y_0/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/90min_en_international_web/01jmmp60mstdx5hezhjg.jpg",
       "name": "Southampton vs Brighton",
       "category": "Football Match",
       "date": "2025-08-28",
@@ -129,7 +129,7 @@
       "entry_fee": "£55",
       "team1": "Southampton",
       "team2": "Brighton & Hove Albion",
-      "image": "https://images.pexels.com/photos/17598568/pexels-photo-17598568/free-photo-of-young-man-in-a-football-shirt-and-a-baseball-cap.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      
       "stadium": "St Mary's Stadium",
       "capacity": "32,384",
       "referee": "Kevin Friend",
@@ -145,15 +145,14 @@
     },
     {
       "id": 7,
-      "thumbnail": "https://example.com/images/epl7.jpg",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQBQgRh2Q5c7LA5p0pJUFv9CXVTKY8VEvQRQ&s",
       "name": "Newcastle United vs Leeds United",
       "category": "Football Match",
       "date": "2025-09-01",
       "location": "St James' Park, Newcastle",
       "entry_fee": "£60",
       "team1": "Newcastle United",
-      "team2": "Leeds United",
-      "image": "https://images.pexels.com/photos/17598568/pexels-photo-17598568/free-photo-of-young-man-in-a-football-shirt-and-a-baseball-cap.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+     
       "stadium": "St James' Park",
       "capacity": "52,305",
       "referee": "Andre Marriner",
@@ -169,7 +168,7 @@
     },
     {
       "id": 8,
-      "thumbnail": "https://example.com/images/epl8.jpg",
+      "thumbnail": "https://cdn.mos.cms.futurecdn.net/vfWNCvL7eESET6wH4RoP3n.jpg",
       "name": "Burnley vs Crystal Palace",
       "category": "Football Match",
       "date": "2025-09-05",
@@ -177,7 +176,7 @@
       "entry_fee": "£50",
       "team1": "Burnley",
       "team2": "Crystal Palace",
-      "image": "https://images.pexels.com/photos/17598568/pexels-photo-17598568/free-photo-of-young-man-in-a-football-shirt-and-a-baseball-cap.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+     
       "stadium": "Turf Moor",
       "capacity": "21,944",
       "referee": "Jonathan Moss",
@@ -193,7 +192,7 @@
     },
     {
       "id": 9,
-      "thumbnail": "https://example.com/images/epl9.jpg",
+      "thumbnail": "https://cdn.mos.cms.futurecdn.net/wJYi7ZTPdC3zQdp6GcMphf-1200-80.jpg",
       "name": "Sheffield United vs Wolverhampton",
       "category": "Football Match",
       "date": "2025-09-10",
@@ -201,7 +200,7 @@
       "entry_fee": "£55",
       "team1": "Sheffield United",
       "team2": "Wolverhampton Wanderers",
-      "image": "https://images.pexels.com/photos/17598568/pexels-photo-17598568/free-photo-of-young-man-in-a-football-shirt-and-a-baseball-cap.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      
       "stadium": "Bramall Lane",
       "capacity": "32,702",
       "referee": "Craig Pawson",
@@ -217,7 +216,7 @@
     },
     {
       "id": 10,
-      "thumbnail": "https://example.com/images/epl10.jpg",
+      "thumbnail": "https://dynamo.kiev.ua/media/gettyimages/Brentford_Fulham_05042024.jpg",
       "name": "Fulham vs Brentford",
       "category": "Football Match",
       "date": "2025-09-15",
@@ -225,7 +224,7 @@
       "entry_fee": "£60",
       "team1": "Fulham",
       "team2": "Brentford",
-      "image": "https://images.pexels.com/photos/17598568/pexels-photo-17598568/free-photo-of-young-man-in-a-football-shirt-and-a-baseball-cap.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+     
       "stadium": "Craven Cottage",
       "capacity": "25,700",
       "referee": "Lee Mason",

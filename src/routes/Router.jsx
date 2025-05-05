@@ -8,6 +8,7 @@ import Register from "../auth/Register";
 import Error from "../components/Error/Error";
 
 import Auth from "../auth/Auth";
+import MatchDetails from "../components/MatchesData/MatchDetails";
 
 const router= createBrowserRouter([
     {
@@ -22,6 +23,11 @@ const router= createBrowserRouter([
                 path:'/profile',
                 Component: Profile
             },
+            {
+                path:'/matchDetails/:id',
+                Component: MatchDetails,
+                loader: ()=> fetch('/data.json')
+            }
             
         ],
 
@@ -37,7 +43,8 @@ const router= createBrowserRouter([
             {
                 path: '/auth/register',
                 Component : Register
-            }
+            },
+           
         ]
     },
     {

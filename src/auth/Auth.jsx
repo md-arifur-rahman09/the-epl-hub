@@ -4,9 +4,9 @@ import { Outlet } from 'react-router';
     
     const Auth = () => {
         return (
-            <div>
+            <div >
               
-                    <Navbar> </Navbar>
+                    <Navbar > </Navbar>
                     <Outlet></Outlet>
                
 
