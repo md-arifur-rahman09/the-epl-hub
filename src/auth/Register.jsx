@@ -1,5 +1,6 @@
 import React, { use } from 'react';
 import { AuthContext } from '../context/AuthProvider';
+import { Link } from 'react-router';
 
 const Register = () => {
 
@@ -43,6 +44,7 @@ const Register = () => {
             <div><a className="link link-hover">Forgot password?</a></div>
             <button className="btn btn-neutral mt-4">Sign up</button>
           </form>
+        <p className='my-2'>Already have an accout. Please <Link className='text-blue-400 underline' to='/login'>Login</Link></p>
         </div>
       </div>
     );
