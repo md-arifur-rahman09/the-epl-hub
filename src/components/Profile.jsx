@@ -7,7 +7,7 @@ const Profile = () => {
 
   if (!user) {
     return (
-      <p className='text-center mt-10'>
+      <p className='text-center my-20'>
          Sorry, you are not logged in. Please{" "}
         <Link className='text-blue-500 underline' to='/auth/login'>Login</Link>
       </p>
