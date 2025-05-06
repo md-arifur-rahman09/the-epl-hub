@@ -5,7 +5,7 @@ import { AuthContext } from '../../context/AuthProvider';
 import { FaUser } from 'react-icons/fa';
 
 const Navbar = () => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
   const { user, userSignOut } = use(AuthContext);
 
@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleLogout = () => {
     userSignOut()
       .then(() => {
-        alert("successfully signOut");
+       
         navigate('/auth/login')
       })
       .catch(error => alert(error.code, error.message))
@@ -25,7 +25,7 @@ const Navbar = () => {
     <li><NavLink to='/profile'>Profile</NavLink></li>
   </>
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-gray-100 shadow-sm ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-2xl font-extrabold ">The EPL Hub</a>
+        <a className="btn btn-ghost text-2xl font-extrabold " href='/'>The EPL Hub</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -46,15 +46,15 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         {user ?
-          <><div className='flex bg-gray-200  rounded-lg mx-2' >
-             <img className='w-12 h-9 my-auto mx-1 rounded-md ' src={user.photoURL} alt="" />
-             <p className=' p-2'>{user.email}</p>
+          <><div className='flex md:bg-gray-200  rounded-lg  md:mx-2' >
+            <img className='w-12 h-9 my-auto mx-1 rounded-md ' src={user.photoURL} alt="" />
+            <p className='hidden p-2 md:block'>{user.email}</p>
           </div>
             <Link onClick={handleLogout} className='btn btn-error'> Logout</Link>
           </>
           : <><Link className='btn btn-primary' to='/auth/login'>Login</Link>  <Link className='rounded-xl  mx-5 btn' to='/auth/register'><FaUser size={30} color="gray" /></Link></>}
 
-       
+
       </div>
     </div>
   );

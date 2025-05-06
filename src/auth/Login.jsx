@@ -1,13 +1,18 @@
-import React, { use, useRef } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import { AuthContext } from '../context/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router';
+import { Eye, EyeOff } from 'lucide-react';
+import Swal from 'sweetalert2';
 
 const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const emailRef = useRef();
+  const [show, setShow] = useState(false);
+  const [error, setError] = useState("")
 
 
-  const { signInUser, signInWithGoogle, forgetPassword } = use(AuthContext);
+  const { signInUser, signInWithGoogle, forgetPassword } = useContext(AuthContext);
   // console.log(signInUser)
 
   const handleSubmit = e => {
@@ -16,33 +21,40 @@ const Login = () => {
     const password = e.target.password.value;
 
     signInUser(email, password)
-      .then(result => {
-        console.log(result.user);
+      .then(() => {
+        Swal.fire({
+          title: "Congratulation!",
+          text: "You are successfully Login!",
+          icon: "success"
+        });
         navigate(location?.state || '/')
       })
-      .catch(error => { console.log(error.message) })
-   
-  }
-    // forget password
-    const emailRef=useRef();
-  const handleForgetPassword=()=> {
-    const email= emailRef.current.value;
-  
-    forgetPassword(email)
-    .then(()=> {})
-    .catch(error=> {console.log(error)})
-  }
+      .catch((error) => { setError(error.message) })
 
+  }
+  // forget password
+
+  const handleForgetPassword = () => {
+
+    const email = emailRef.current.value;
+    // console.log(email)
+
+
+    //  reset password / forget password
+    forgetPassword(email)
+      .then(() => { alert("A password reset email send to your mail. Please reset your password.") })
+      .catch(error => { setError(error.message) })
+  };
 
   // sign in with google
   const handleGoogle = () => {
     signInWithGoogle()
-      .then(result => {
-        console.log(result.user)
+      .then(() => {
+
         navigate('/')
       })
-      .catch(error => {
-        console.log(error.code, error.message)
+      .catch((error) => {
+        setError(error.message)
       })
   }
 
@@ -55,16 +67,32 @@ const Login = () => {
 
 
     <div className="card bg-base-100 w-full max-w-sm mt-10 mx-auto shrink-0 shadow-2xl">
+
       <h1 className="text-5xl font-bold text-center">Login now!</h1>
       <div className="card-body">
+
         <form onSubmit={handleSubmit} className="fieldset">
+
           <label className="label">Email</label>
-          <input type="email" name='email' ref={emailRef} className="input" placeholder="Email" required />
+          <input type="email" name='email' ref={emailRef} className="input"
+            placeholder="Email" required />
+
           <label className="label">Password</label>
-          <input type="password" name='password' className="input" placeholder="Password"
-          />
-          <div><a href='/auth/login' onClick={()=> handleForgetPassword()} className="link link-hover">Forgot password?</a></div>
+          <div className=' relative'>
+            <input
+              type={show ? "text" : "password"}
+              name='password'
+              className="input"
+              placeholder="Password"
+            />
+            <button onClick={() => setShow(!show)} className='btn btn-xs  absolute z-10 top-2 right-6'>{show ? <EyeOff className='w-4'></EyeOff> : <Eye className='w-4'></Eye>}</button>
+            {error && <p className='text-red-400 mt-3'> {error}</p>}
+
+          </div>
+
+          <div onClick={handleForgetPassword}><Link to='/auth/login' className="link link-hover">Forgot password?</Link></div>
           <button className="btn btn-neutral mt-4">Login</button>
+
         </form>
 
         {/* Google */}

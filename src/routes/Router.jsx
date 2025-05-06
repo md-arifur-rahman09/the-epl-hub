@@ -10,47 +10,59 @@ import Error from "../components/Error/Error";
 import Auth from "../layouts/Auth";
 import MatchDetails from "../components/MatchesData/MatchDetails";
 import Privateroute from "../PrivateRoute/Privateroute";
+import Terms from "../components/Navbar/Footer/Terms";
+import PrivacyPolicy from "../components/Navbar/Footer/PrivacyPolicy";
 
-const router= createBrowserRouter([
+const router = createBrowserRouter([
     {
-        path:'/',
+        path: '/',
         Component: Root,
         children: [
             {
-                index:true,
+                index: true,
                 Component: Home
             },
             {
-                path:'/profile',
+                path: '/profile',
                 Component: Profile
             },
-            {
-                path:'/matchDetails/:id',
-                element: <Privateroute><MatchDetails></MatchDetails></Privateroute>,
-                loader: ()=> fetch('/data.json')
-            }
             
+            {
+                path: '/terms&conditions',
+                Component: Terms
+            },
+            {
+                path: '/privcayPolicy',
+                Component: PrivacyPolicy
+            }
+            ,
+            {
+                path: '/matchDetails/:id',
+                element: <Privateroute><MatchDetails></MatchDetails></Privateroute>,
+                loader: () => fetch('/data.json')
+            }
+
         ],
 
     },
     {
-        path:'auth',
+        path: 'auth',
         Component: Auth,
         children: [
             {
-                path:'/auth/login',
+                path: '/auth/login',
                 Component: Login
             },
             {
                 path: '/auth/register',
-                Component : Register
+                Component: Register
             },
-           
+
         ]
     },
     {
-        path:'*',
-        Component:Error
+        path: '*',
+        Component: Error
     }
 
 ])

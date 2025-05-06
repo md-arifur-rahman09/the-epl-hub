@@ -17,12 +17,15 @@ const MatchDetails = () => {
 
   return (
     <div className='lg:grid grid-cols-12 w-11/12 mx-auto '>
-      <div className="bg-white mx-auto shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 col-span-9">
-        <img
-          src={thumbnail}
-          alt={name}
-          className="max-w-[900px] mx-auto max-h-[600px] object-cover"
-        />
+      <div className="col-span-12 lg:col-span-9 bg-white shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+
+      <div className="w-full">
+  <img
+    src={thumbnail}
+    alt={name}
+    className="w-full h-auto object-cover rounded-t-lg"
+  />
+</div>
         <div className="p-5 space-y-2">
           <div className="text-sm text-gray-700 max-w-[800px] mx-auto">
             <h2 className="text-5xl font-bold text-gray-800 my-5">{name}</h2>
@@ -52,7 +55,7 @@ const MatchDetails = () => {
       </div>
 
       {/* Sidebar */}
-      <div className='col-span-3 bg-gray-100 sticky h-fit top-2 '>
+      <div className='col-span-3 bg-gray-100 sticky top-20 h-fit'>
         <h3 className="text-3xl font-bold mb-3 py-5 text-center bg-gray-300">Booking Info</h3>
         {bookedTicket ? (
           <p className="text-green-600 mx-5 mb-5">

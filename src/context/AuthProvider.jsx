@@ -45,7 +45,7 @@ const AuthProvider = ({ children }) => {
     // observer 
     useEffect(() => {
         const unssubscribe = onAuthStateChanged(auth, (currentUser) => {
-            console.log(currentUser)
+            // console.log(currentUser)
             setUser(currentUser);
             setLoading(false);
         });
@@ -61,7 +61,8 @@ const AuthProvider = ({ children }) => {
         signInWithGoogle,
         user,
         userSignOut,
-        userUpdate, loading,
+        userUpdate,
+         loading,
        forgetPassword
 
     }

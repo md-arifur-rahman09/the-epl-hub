@@ -34,12 +34,18 @@ const Register = () => {
           displayName: name,
           photoURL: photo
         };
+        
         userUpdate(updateInfo)
           .then(() => {
-            alert("Your are successfully Registered!")
+          
+            Swal.fire({
+              title: "Congratulation!",
+              text: "You are successfully registered!",
+              icon: "success"
+            });
           
            })
-          .catch(error => console.log(error.message));
+          .catch(error => setErrorMessage(error.mess));
 
         navigate('/');
       })
@@ -64,7 +70,9 @@ const Register = () => {
     <div className="card bg-base-100 w-full max-w-sm mt-10 mx-auto shrink-0 shadow-2xl">
       <h1 className="text-3xl font-bold text-center">Please Register</h1>
       <div className="card-body">
+
         <form onSubmit={handleSubmit} className="fieldset space-y-1">
+
           <label className="label">Name</label>
           <input type="text" name='name' className="input" placeholder="Name" required />
 
@@ -88,7 +96,7 @@ const Register = () => {
 
           {errorMessage && <p className="text-red-400 text-xs mt-1">{errorMessage}</p>}
 
-          <div><a className="link link-hover">Forgot password?</a></div>
+         
           <button type="submit" className="btn btn-neutral mt-4">Sign up</button>
         </form>
 

@@ -9,14 +9,14 @@ const Root = () => {
     const isNavigating = Boolean(navigation.location)
     return (
         <div>
-            <nav>
+            <nav className='sticky top-0 z-50'>
                 <Navbar></Navbar>
             </nav>
             <main>
                 {isNavigating && <span className="loading loading-bars loading-xl"></span>}
                 <Outlet></Outlet>
             </main>
-            <footer>
+            <footer className=''>
                 <Footer></Footer>
             </footer>
         </div>

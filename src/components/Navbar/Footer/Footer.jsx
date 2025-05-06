@@ -4,12 +4,12 @@ import { Link } from 'react-router';
 const Footer = () => {
   return (
 <div>
-<div className="footer p-10 bg-gray-300  flex justify-around">
+<div className="footer py-5 bg-gray-200  flex justify-around max-h-36">
       <div>
-        <span className=" text-xl text-black font-bold ">The EPL Hub</span>
+        <Link to='/' className=" text-xl text-black font-bold hover:text-gray-600 ">The EPL Hub</Link>
         <Link to="/" className="link link-hover">Home</Link>
-        <Link to="/terms" className="link link-hover">Terms</Link>
-        <Link to="/privacy" className="link link-hover">Privacy</Link>
+        <Link to="/terms&conditions" className="link link-hover">Terms</Link>
+        <Link to='/privcayPolicy' className="link link-hover">Privacy</Link>
       </div>
       <div>
         <span className="footer-title">Social</span>
@@ -22,7 +22,7 @@ const Footer = () => {
 
 
     </div>
-    <p className="bg-gray-400 text-center p-3">© {new Date().getFullYear()} All rights reserved.</p>
+    <p className="bg-gray-400 text-center  p-2">© {new Date().getFullYear()} All rights reserved.</p>
 </div>
   );
 };
