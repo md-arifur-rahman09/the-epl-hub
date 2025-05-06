@@ -42,7 +42,15 @@ const Login = () => {
 
     //  reset password / forget password
     forgetPassword(email)
-      .then(() => { alert("A password reset email send to your mail. Please reset your password.") })
+      .then(() => {
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "An email has been sent to your email address. Please check your inbox to proceed.",
+          showConfirmButton: false,
+          timer: 1500
+        });
+       })
       .catch(error => { setError(error.message) })
   };
 
