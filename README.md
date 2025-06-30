@@ -1,12 +1,53 @@
-# React + Vite
+# ⚽ The EPL Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**The EPL Hub** is an interactive sports event management platform based on the English Premier League. It enables users to browse, filter, and register for EPL-themed events. Featuring secure authentication, responsive UI, and dynamic routing — this application is built using modern tools like React, Firebase, TailwindCSS, and DaisyUI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🔗 Live Demo
 
-## Expanding the ESLint configuration
+🚀 [Visit Live Website](https://assignment-09-f413c.web.app/)  
+📦 [GitHub Repository](https://github.com/md-arifur-rahman09/the-epl-hub)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 📸 Screenshot
+
+![The EPL Hub](https://i.postimg.cc/7Yp4J1JX/the-EPL-hub.jpg)
+
+---
+
+### ✨ Features
+
+- 🔐 User authentication (Firebase)
+- 🗂️ Filter events by EPL teams or categories
+- ⚽ Beautiful EPL-themed UI
+- 🔍 Search functionality
+- 🧭 Protected routes for registered users
+- 📱 Fully responsive design
+- 🚀 Smooth navigation and routing
+- 🔄 Dynamic content loading
+
+---
+
+### 🛠️ Tech Stack
+
+| Category     | Tools                                      |
+|--------------|---------------------------------------------|
+| Frontend     | React, Tailwind CSS, DaisyUI                |
+| Routing      | React Router DOM v7                         |
+| State Mgmt   | React Context API                           |
+| Auth         | Firebase Authentication                     |
+| Deployment   | Firebase Hosting                            |
+| Alerts       | SweetAlert2                                 |
+| Icons        | Lucide React, React Icons                   |
+| Build Tool   | Vite                                        |
+
+---
+
+### ⚙️ Installation & Setup
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/md-arifur-rahman09/the-epl-hub.git
+cd the-epl-hub
